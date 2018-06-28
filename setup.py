@@ -26,7 +26,7 @@
 
 import Cython.Compiler.Options
 Cython.Compiler.Options.annotate = True
-from distutils.core import setup
+from setuptools import setup
 from Cython.Build import cythonize
 from Cython.Distutils.extension import Extension
 from Cython.Distutils import build_ext
