@@ -52,6 +52,11 @@ setup(
     packages=['bsd'],
     package_dir={'bsd' : 'bsd'},
     package_data={'bsd': ['*.html', '*.c']},
+    setup_requires=[
+        'setuptools>=18.0',
+        'Cython',
+        'six'
+    ],
     cmdclass={'build_ext': build_ext},
     ext_modules=extensions,
 )
